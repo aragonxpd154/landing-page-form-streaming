@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+  <title>Formulário de Solicitação de Canais e Filmes</title>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 text-align="center" id="title">Solicite seus conteúdos favoritos</h1>
+      <h2>Formulário de Pedidos de Canais, Filmes e Séries</h2>
+      <p class="description text-center" id="description">Este é um formulário de sugestões para solicitação de acréscimo de novos canais e filmes em nosso catálogo.</p>
+    </div>
+  </header>
+  
+  <div class="container">
+    <form class="form-control" id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name">Entre com seu nome:</label>
+        <input class="form-control" name="name" type="text" id="name" placeholder="Seu Nome" required>
+      </div>
+      <div class="form-group">
+        <label id="email-label" for="email">Entre com seu e-mail:</label>
+        <input class="form-control" type="email" id="email" placeholder="Seu e-mail" required>
+      </div>
+      <div class="form-group">
+        <label id="number-label" for="number">Idade:</label>
+        <input class="form-control" type="number" id="number" min="13" max="100" placeholder="Sua idade" required>
+      </div>
+      <div class="form-group">
+        <label>Escolha o tipo de solicitação:</label>
+        <select class="form-control" id="dropdown">
+          <option value="channel">Canal</option>
+          <option value="filmes">Filme</option>
+          <option value="series">Série</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <br><br>
+        <input class="input-checkbox" value="front-end-projects" name="prefer" type="checkbox" <label for="prefer"> Preparado para receber nossos sinais intergalácticos? Se sim, podemos entrar em contato com você caso precisemos de mais sugestões, ou você prefere permanecer em um universo paralelo? Marque essa caixinha </label>
+        
+      </div>
+      <div class="form-group">
+        <h2>Feedback</h2>
+        <p id="feedback-description">Dê um toque especial: Compartilhe sua opinião e ajude-nos a aprimorar ainda mais a sua experiência com nossos serviços!</p>
+        <br>
+        <input class="input-radio" name="user-recommend" type="radio" value="definitely"<label>Rindo muito e amando horrores, aaaa!</label><br>
+        <input class="input-radio" name="user-recommend" type="radio" value="-+" <label>Espaço para melhorias (ou talvez algumas piadas ruins)</label><br>
+        <input class="input-radio" name="user-recommend" type="radio" value="not-sure" <label>Odiando os serviços de streaming... é sério isso?</label>
+        <textarea class="input-textarea" placeholder="Eu acho que..."></textarea>
+      </div>
+      <div class="form-group">
+        <input class="input-checkbox" value="terms" name="prefer" type="checkbox"<label for="terms">Você está pronto para embarcar em uma aventura épica com nossos parceiros espaciais? Compartilharemos seus dados confidenciais para criar uma experiência sensacional para você, ou você prefere manter seus segredos cósmicos apenas para si mesmo? </label>
+      </div>
+      <button class="submit-button" type="submit" id="submit">Enviar</button>
+    </form>
+  </div>
+</body>
+</html>
